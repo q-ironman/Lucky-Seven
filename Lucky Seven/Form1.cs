@@ -21,6 +21,7 @@ namespace Lucky_Seven
 
         private void button_Spin_Click(object sender, EventArgs e)
         {
+            button_Spin.Image = ımageListButton.Images[1];
             timer1.Start();
         }
 
@@ -49,6 +50,7 @@ namespace Lucky_Seven
             {
                 timer1.Stop();
                 cnt = 0;
+                button_Spin.Image = ımageListButton.Images[0];
                 timer1.Interval = 50;
                 if(firstPic == secondPic && secondPic == thirdPic)
                 {
@@ -73,6 +75,29 @@ namespace Lucky_Seven
             
         }
 
-        
+        private void picBox_firstPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picBox_secondPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picBox_thirdPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtboxScore_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_score_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
