@@ -67,8 +67,24 @@ namespace Lucky_Seven
                 }
                 else if(firstPic == secondPic || firstPic == thirdPic || secondPic == thirdPic)
                 {
-                    score += 200;
-                    txtboxScore.Text = score.ToString();
+                    if(firstPic == 5 || secondPic == 5)
+                    {
+                        score += 250;
+                        txtboxScore.Text = score.ToString();
+                    }
+                    else
+                    {
+                        score += 200;
+                        txtboxScore.Text = score.ToString();
+                    }
+                }
+                else
+                {
+                    if (firstPic == 5 || secondPic == 5 || thirdPic == 5)
+                    {
+                        score += 150;
+                        txtboxScore.Text = score.ToString();
+                    }
                 }
 
             }
