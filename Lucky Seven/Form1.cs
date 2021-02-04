@@ -52,37 +52,34 @@ namespace Lucky_Seven
                 cnt = 0;
                 button_Spin.Image = ımageListButton.Images[0];
                 timer1.Interval = 50;
-                if(firstPic == secondPic && secondPic == thirdPic)
+                if(firstPic == 5 || secondPic == 5 || thirdPic == 5)
                 {
-                    if(firstPic == 5)
+                    if(firstPic == 5 && secondPic == 5 && thirdPic == 5)
                     {
                         score += 700;
                         txtboxScore.Text = score.ToString();
                     }
-                    else
-                    {
-                        score += 350;
-                        txtboxScore.Text = score.ToString();
-                    }
-                }
-                else if(firstPic == secondPic || firstPic == thirdPic || secondPic == thirdPic)
-                {
-                    if(firstPic == 5 || secondPic == 5)
+                    if((firstPic == 5 && secondPic == 5) || (firstPic == 5 && thirdPic == 5) || (thirdPic == 5 && secondPic == 5))
                     {
                         score += 250;
                         txtboxScore.Text = score.ToString();
                     }
                     else
                     {
-                        score += 200;
+                        score += 150;
                         txtboxScore.Text = score.ToString();
                     }
                 }
-                else
+                if(firstPic != 5 || secondPic != 5 || thirdPic != 5)
                 {
-                    if (firstPic == 5 || secondPic == 5 || thirdPic == 5)
+                    if(firstPic == secondPic && secondPic == thirdPic)
                     {
-                        score += 150;
+                        score += 350;
+                        txtboxScore.Text = score.ToString();
+                    }
+                    if(firstPic == secondPic ||firstPic == thirdPic || secondPic == thirdPic)
+                    {
+                        score += 200;
                         txtboxScore.Text = score.ToString();
                     }
                 }
@@ -91,29 +88,6 @@ namespace Lucky_Seven
             
         }
 
-        private void picBox_firstPic_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picBox_secondPic_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picBox_thirdPic_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtboxScore_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_score_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

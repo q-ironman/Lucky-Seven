@@ -54,7 +54,6 @@ namespace Lucky_Seven
             this.picBox_firstPic.Size = new System.Drawing.Size(171, 315);
             this.picBox_firstPic.TabIndex = 0;
             this.picBox_firstPic.TabStop = false;
-            this.picBox_firstPic.Click += new System.EventHandler(this.picBox_firstPic_Click);
             // 
             // picBox_secondPic
             // 
@@ -65,7 +64,6 @@ namespace Lucky_Seven
             this.picBox_secondPic.Size = new System.Drawing.Size(171, 315);
             this.picBox_secondPic.TabIndex = 1;
             this.picBox_secondPic.TabStop = false;
-            this.picBox_secondPic.Click += new System.EventHandler(this.picBox_secondPic_Click);
             // 
             // picBox_thirdPic
             // 
@@ -76,7 +74,6 @@ namespace Lucky_Seven
             this.picBox_thirdPic.Size = new System.Drawing.Size(171, 315);
             this.picBox_thirdPic.TabIndex = 2;
             this.picBox_thirdPic.TabStop = false;
-            this.picBox_thirdPic.Click += new System.EventHandler(this.picBox_thirdPic_Click);
             // 
             // picsList
             // 
@@ -116,7 +113,6 @@ namespace Lucky_Seven
             this.txtboxScore.Name = "txtboxScore";
             this.txtboxScore.Size = new System.Drawing.Size(80, 34);
             this.txtboxScore.TabIndex = 4;
-            this.txtboxScore.TextChanged += new System.EventHandler(this.txtboxScore_TextChanged);
             // 
             // lbl_score
             // 
@@ -128,7 +124,6 @@ namespace Lucky_Seven
             this.lbl_score.Size = new System.Drawing.Size(146, 29);
             this.lbl_score.TabIndex = 5;
             this.lbl_score.Text = "Your Score: ";
-            this.lbl_score.Click += new System.EventHandler(this.lbl_score_Click);
             // 
             // ımageListButton
             // 
